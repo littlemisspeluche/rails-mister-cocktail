@@ -1,0 +1,31 @@
+<div class="background-box">
+  <div class="text-box">
+    <h1> Hello Mister Cocktails</h1>
+    <%= link_to "Create new cocktail", new_cocktail_path, class: "btn btn-ghost" %>
+  </div>
+</div>
+<div class="container">
+  <div class="cards-cocktails">
+    <h2>Check out all Cocktails</h2>
+    <ul class="showcase">
+      <% @cocktails.each do |cocktail| %>
+      <div class="card">
+        <li><%= cl_image_tag cocktail.photo, height: 400, width: 300, crop: :fill %>
+
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %> </h2>
+          <%= link_to cocktail_path(cocktail), method: :delete do %>
+          <i class="fas fa-trash"></i>
+          <% end %>
+            |
+          <%= link_to cocktail_path(cocktail) do %>
+          <i class="fas fa-pencil-alt"></i>
+          <% end %>
+          <% end %>
+        </li>
+      </div>
+    </ul>
+  </div>
+
+</div>
+
+

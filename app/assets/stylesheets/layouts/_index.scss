@@ -1,0 +1,89 @@
+// Import your layouts CSS files here.
+// Examples:
+// @import "dashboard";
+// @import "profile";
+// @import "map";
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif');
+
+
+.background-box {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('background.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  // background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+// Buttons
+.btn-ghost {
+  color: #FEF6C9;
+  border: 1px solid #FEF6C9;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 10s ease;
+}
+.btn-ghost:hover {
+  opacity: 1;
+  background-color: #FEF6C9;
+
+}
+
+.text-box {
+  padding-top: 250px;
+}
+
+// Headers
+h2 {
+  font-family: 'PT Serif';
+  font-size: 44px;
+  text-align: left;
+}
+// Cocktails-Cards
+
+.cards-cocktails {
+  text-align: center;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.showcase {
+  list-style: none;
+  width: 100%;
+  align-items: center;
+}
+
+.card li{
+  display: block;
+  float: left;
+  width: 300px;
+  margin: 25px;
+  height: 500px;
+  padding-top: 40px;
+}
+
+.card h2 a {
+  font-size: 22px;
+  font-family: 'PT Serif';
+
+}
+.card a {
+  text-decoration: none;
+  font-family: 'PT Sans';
+  color: black;
+}
+
+.card img {
+  -webkit-transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.card img:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
